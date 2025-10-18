@@ -1,0 +1,94 @@
+{
+  "tasks": [
+    {
+      "id": "a12b",
+      "title": "Feed the office plant before it files a complaint",
+      "dueDate": "2025-10-20",
+      "status": "to-do",
+      "priority": "medium",
+      "description": "Plant HR has warned me twice already. Must water the poor guy before lunch.",
+      "createdAt": "2025-10-18T04:15:32.511Z"
+    },
+    {
+      "id": "b34c",
+      "title": "Fix bug that only appears on boss’s laptop",
+      "dueDate": "2025-10-21",
+      "status": "pending",
+      "priority": "high",
+      "description": "Works fine on my machine™ but somehow breaks every time the boss opens it.",
+      "createdAt": "2025-10-18T05:02:45.231Z"
+    },
+    {
+      "id": "c56d",
+      "title": "Buy coffee before team mutiny begins",
+      "dueDate": "2025-10-19",
+      "status": "pending",
+      "priority": "high",
+      "description": "Team productivity dropped 80% after the coffee ran out.",
+      "createdAt": "2025-10-18T06:00:00.000Z"
+    },
+    {
+      "id": "d78e",
+      "title": "Rename variables so future me understands them",
+      "dueDate": "2025-10-25",
+      "status": "completed",
+      "priority": "low",
+      "description": "‘x’, ‘y’, and ‘temp2’ are no longer helpful names. RIP old naming habits.",
+      "createdAt": "2025-10-18T07:10:10.500Z"
+    },
+    {
+      "id": "e90f",
+      "title": "Test feature that works only when nobody’s watching",
+      "dueDate": "2025-10-22",
+      "status": "pending",
+      "priority": "medium",
+      "description": "Every time I open console, it stops working. Schrödinger’s feature.",
+      "createdAt": "2025-10-18T08:12:44.100Z"
+    },
+    {
+      "id": "f11g",
+      "title": "Reply to client’s 37th email titled ‘Quick Question’",
+      "dueDate": "2025-10-20",
+      "status": "pending",
+      "priority": "high",
+      "description": "The quick question turned into a 7-hour debugging session last time.",
+      "createdAt": "2025-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "g22h",
+      "title": "Refactor code I wrote at 2 AM",
+      "dueDate": "2025-10-24",
+      "status": "pending",
+      "priority": "medium",
+      "description": "It works, but I have no idea how. Future me deserves better.",
+      "createdAt": "2025-10-18T10:05:05.000Z"
+    },
+    {
+      "id": "h33i",
+      "title": "Convince team to stop pushing directly to main",
+      "dueDate": "2025-10-28",
+      "status": "pending",
+      "priority": "high",
+      "description": "One day, main will just delete itself out of sadness.",
+      "createdAt": "2025-10-18T11:22:22.222Z"
+    },
+    {
+      "id": "i44j",
+      "title": "Attend meeting that could’ve been an email",
+      "dueDate": "2025-10-19",
+      "status": "completed",
+      "priority": "low",
+      "description": "Spent 1 hour discussing whether the font should be bold or bolder.",
+      "createdAt": "2025-10-18T12:34:56.789Z"
+    },
+    {
+      "id": "j55k",
+      "title": "Deploy app without breaking production (again)",
+      "dueDate": "2025-10-23",
+      "status": "pending",
+      "priority": "high",
+      "description": "Remember: if nothing breaks, did you even deploy?",
+      "createdAt": "2025-10-18T13:00:00.000Z"
+    }
+  ]
+}

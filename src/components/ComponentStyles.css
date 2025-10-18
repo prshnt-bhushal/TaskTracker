@@ -1,0 +1,224 @@
+/* Navbar Css */
+header {
+  background-color: var(--primary-color);
+  padding: 0.5rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-item a {
+  transition: color 0.3s ease;
+}
+.nav-item a:hover {
+  color: var(--secondary-color);
+}
+
+/* main css */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Footer Css */
+footer {
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+  padding: 0.75rem 0;
+  margin-top: auto;
+}
+
+/* buttons Css */
+button {
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+button.primary-button {
+  background-color: var(--primary-color);
+}
+
+button.transparent-button {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+button.primary-button:hover {
+  background-color: var(--secondary-color);
+}
+
+button.transparent-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button.secondary-button {
+  background-color: var(--secondary-color);
+}
+button.secondary-button:hover {
+  opacity: 0.8;
+}
+
+button.delete-button {
+  background-color: var(--danger-color);
+}
+
+button.delete-button:hover {
+  opacity: 0.7;
+}
+
+/* Card Css */
+.task-card {
+  background-color: #fff;
+  border: 1.8px solid #d1d5db;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  translate: 0 -2px;
+}
+
+.task-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0 0 16px 0;
+  padding-top: 0.75rem;
+}
+
+.task-label {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Status Tag */
+.status-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid;
+  text-transform: capitalize;
+}
+
+/* Status Colors */
+.status-todo {
+  background-color: #ffedd582;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.status-in-progress {
+  background-color: #dbeafe;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.status-completed {
+  background-color: #d1fae5;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Priority Colors */
+.priority-tag {
+  text-transform: capitalize;
+  font-size: 14px;
+  display: inline-block;
+}
+.priority-low {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.priority-medium {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.priority-high {
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+/* Due Date */
+.task-due-date {
+  font-size: 14px;
+}
+
+/* Deadline Ribbon */
+.deadline-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 0 8px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.ribbon-overdue {
+  background-color: #dc2626;
+}
+
+.ribbon-urgent {
+  background-color: #dc2626;
+}
+
+.ribbon-warning {
+  background-color: #f97316;
+}
+
+.ribbon-normal {
+  background-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .task-card {
+    padding: 16px;
+  }
+
+  .task-card h3 {
+    font-size: 16px;
+    padding-right: 80px;
+  }
+
+  .deadline-ribbon {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}

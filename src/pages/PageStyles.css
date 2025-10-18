@@ -1,0 +1,226 @@
+/* Task page css */
+.task-page-container {
+  margin: 0 auto;
+}
+
+.task-page-container .task-page-header {
+  margin-bottom: 1rem;
+}
+.task-page-container .task-page-header,
+.task-page-container .task-page-header .search-and-sort-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.category-button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1.8px solid #d1d5db;
+  border-radius: 8px;
+  gap: 0.5rem;
+  padding: 0 0.75rem;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.search-container .icon {
+  color: var(--primary-color);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.search-container .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+}
+
+.sortby-container {
+  display: flex;
+  align-items: center;
+}
+
+.sortby-dropdown {
+  appearance: none;
+  background-color: #fff;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1.8px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 36px 8px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%2307518f' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.sortby-dropdown:hover,
+.search-container:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px rgba(7, 81, 143, 0.3);
+}
+
+.sortby-dropdown:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.task-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+/* Task page css */
+
+/* Landing page Css */
+
+.hero-section {
+  padding: 60px 20px;
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-section .hero-content {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-section p,
+.how-to-section p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.hero-section .card-container {
+  max-width: 400px;
+  flex: 1;
+  margin: 0 auto;
+}
+
+.how-to-section {
+  padding: 80px 10%;
+}
+
+.how-to-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  /* margin-bottom: 40px; */
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.steps-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+.step-number {
+  background-color: var(--primary-color);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.step-content p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.code-block {
+  background-color: #1f2937;
+  color: var(--secondary-color);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-size: 14px;
+}
+
+/* media queries for landing pages */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-section .card-container {
+    max-width: 100%;
+  }
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-number {
+    margin-bottom: 12px;
+  }
+}
