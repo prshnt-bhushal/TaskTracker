@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ModalStyles.css';
-import closeIcon from '../../assets/icons/close-icon.svg';
+import closeIcon from '../../assets/Icons/close-icon.svg';
 import { createTask } from '../../services/api';
 import ValidateForm from './ValidateForm';
 import toast from 'react-hot-toast';
