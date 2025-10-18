@@ -20,8 +20,20 @@ const LandingPage = () => {
             task management system
           </p>
           <div className="form-row">
-            <button onClick={()=> navigate('/')} className="transparent-button">Get Code</button>
-            <button onClick={()=> navigate('/tasks')} className="primary-button">Get Started</button>
+            <a
+              href="https://github.com/prshnt-bhushal/TaskTracker"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transparent-anchor"
+            >
+              Get Code
+            </a>
+            <button
+              onClick={() => navigate('/tasks')}
+              className="primary-button"
+            >
+              Get Started
+            </button>
           </div>
         </div>
         <div className="card-container">
@@ -49,9 +61,8 @@ const LandingPage = () => {
               </p>
               <div className="code-block">
                 <code>
-                  git clone
-                  https://github.com/yourusername/task-management-app.git <br />{' '}
-                  cd task-management-app
+                  git clone https://github.com/prshnt-bhushal/TaskTracker.git{' '}
+                  <br /> cd TaskTracker
                 </code>
               </div>
             </div>
