@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from 'react';
 import '../PageStyles.css';
-import searchIcon from '../../assets/icons/search-icon.svg';
+import searchIcon from '../../assets/Icons/search-icon.svg';
 import { CreateTaskModal, EditTaskModal, TaskCard } from '../../components';
 import { fetchTasks } from '../../services/api';
 
