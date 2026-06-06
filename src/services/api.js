@@ -5,19 +5,9 @@ const LS_KEY = 'tasktracker_tasks';
 //today date + 2 days for seed data
 const today = new Date();
 const tomorrow = new Date(today);
-tomorrow.setDate(today.getDate() + 2);
+tomorrow.setDate(today.getDate() + 1);
 
 const SEED_TASKS = [
-  {
-    id: 'k66l',
-    title: 'Fix Vercel deployment — localStorage fallback for json-server',
-    dueDate: '2026-06-06',
-    status: 'completed',
-    priority: 'high',
-    description:
-      'json-server only runs locally, so Vercel had no backend. Added localStorage fallback in api.js so the app works in production without any server.',
-    createdAt: new Date().toISOString(),
-  },
   {
     id: 'a12b',
     title: 'Feed the office plant before it files a complaint',
@@ -47,6 +37,16 @@ const SEED_TASKS = [
     description:
       'Works fine on my machine™ but somehow breaks every time the boss opens it.',
     createdAt: '2025-10-18T05:02:45.231Z',
+  },
+  {
+    id: 'z86l',
+    title: 'Fix Vercel deployment — localStorage fallback for json-server',
+    dueDate: '2026-06-06',
+    status: 'completed',
+    priority: 'high',
+    description:
+      'json-server only runs locally, so Vercel had no backend. Added localStorage fallback in api.js so the app works in production without any server.',
+    createdAt: new Date().toISOString(),
   },
 ];
 
